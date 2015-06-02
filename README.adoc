@@ -1,0 +1,10 @@
+# DATAMONGO-1229 demo
+
+This is a demonstration of the bug described in DATAMONGO-1229. The repository generator supports
+using `IgnoreCase` with a nested field, but actually querying it results in an exception.
+
+## Usage
+
+Launch the application and load link:http://localhost:8080/email/chrylis@gmail.com[]. The queried
+object will be returned normally. Load link:http://localhost:8080/emailIgnoreCase/chrylis@gmail.com[],
+and the repository will throw an exception.
